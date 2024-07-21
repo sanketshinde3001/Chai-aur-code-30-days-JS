@@ -1,0 +1,23 @@
+<!-- Task 7: Select an HTML element and change one of its attributes (e.g., src of an img
+tag). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4_T7</title>
+</head>
+<body>
+    <div id="main">
+        <img src="img.jpg" alt="img" id="img" height="500">
+    </div>
+    <button type="button" onclick="changesrc()">Change</button>
+</body>
+<script>
+    function changesrc(){
+        let src = document.getElementById("img")
+        src.src = "img1.jpg"
+    } 
+</script>
+</html>

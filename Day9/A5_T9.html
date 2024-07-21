@@ -1,0 +1,32 @@
+<!-- Task 9: Add a click event listener to a button that changes the text content of a
+paragraph. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A5_T9</title>
+  </head>
+  <body>
+    <div id="main">
+      <p id="one">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas error
+        neque illo facilis vero et ipsa deserunt veniam ad velit culpa maiores
+        accusamus eaque iure cupiditate architecto ipsum aut quae, pariatur hic
+        recusandae quia sapiente sequi? Aspernatur exercitationem officia
+        commodi sunt dolores, pariatur veritatis, cum mollitia veniam qui nihil
+        velit.
+      </p>
+    </div>
+    <button type="button" id="butt">Change</button>
+  </body>
+  <script>
+    let button = document.getElementById("butt");
+    button.addEventListener('click', changetext);
+    function changetext() {
+      let heading = document.getElementById("one");
+      heading.innerText = "HIII"
+    }
+  </script>
+</html>

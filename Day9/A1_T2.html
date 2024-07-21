@@ -1,0 +1,26 @@
+<!-- Task 2: Select an HTML element by its class and change its background color. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1_T2</title>
+</head>
+<body>
+    <h1 id="headings">Heading</h1>
+    <h3 class="info">This is line 1</h3>
+    <h3 class="info">This is line 2</h3>
+    <h3 class="info">This is line 3</h3>
+    <button type="button" onclick="changebg()">Change</button>
+</body>
+<script>
+    function changebg(){
+        let iddata = document.getElementsByClassName("info")
+        for (let x=0;x<iddata.length;x++){
+            iddata[x].style.backgroundColor = "red";
+        }
+    }
+</script>
+</html>
+

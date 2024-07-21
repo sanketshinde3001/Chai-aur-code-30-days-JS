@@ -1,0 +1,22 @@
+<!-- Task 1: Select an HTML element by its ID and change its text content. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1_T1</title>
+</head>
+<body>
+    <h1 id="headings">Heading</h1>
+    <h3 id="info">Here is info before changes</h3>
+    <button type="button" onclick="changetext()">Change</button>
+</body>
+<script>
+    function changetext(){
+        let iddata = document.getElementById("info")
+        iddata.innerText = "Here is info After changes"
+    }
+</script>
+</html>
+

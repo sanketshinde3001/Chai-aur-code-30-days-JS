@@ -1,0 +1,27 @@
+<!-- Task 4: Create a new li element and add it to an existing ul list. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2_T4</title>
+</head>
+<body>
+    <ul id="list">
+        <li>line 1</li>
+        <li>line 2</li>
+        <li>line 3</li>
+        <li>line 4</li>
+    </ul>
+    <button type="button" onclick="addli()">Change</button>
+</body>
+<script>
+    function addli(){
+        let container = document.getElementById("list")
+        let newli = document.createElement('li')
+        newli.innerText = "line 5"
+        container.appendChild(newli)
+    } 
+</script>
+</html>

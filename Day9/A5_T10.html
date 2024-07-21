@@ -1,0 +1,29 @@
+<!-- Task 10: Add a mouseover event listener to an element that changes its border color. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A5_T10</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="one" style="border: 2px; border-style: dotted;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+      </div>
+    </div>
+    <br>
+    <br>
+    <button type="button" id="butt">Change</button>
+  </body>
+  <script>
+    let button = document.getElementById("butt");
+    button.addEventListener('mouseover', changetext);
+    function changetext() {
+      let heading = document.getElementById("one");
+      heading.innerText = "HIII"
+    }
+  </script>
+</html>
