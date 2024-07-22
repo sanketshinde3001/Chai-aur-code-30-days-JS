@@ -1,0 +1,24 @@
+<!-- Task 2: Add a double-click event listener to an image that toggles its visibility. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1_T2</title>
+</head>
+<body>
+    <img src="img.jpg" id="image1" height="500" style="visibility: visible;">
+    
+</body>
+<script>
+    var images = document.getElementById("image1")
+    images.addEventListener('dblclick',()=>{
+        if (images.style.visibility === "hidden") {
+            images.style.visibility = "visible";
+          } else {
+            images.style.visibility = "hidden";
+          }
+    })
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!-- Task 10: Add an event listener to a parent element that listens for events from
+dynamically added child elements.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A5_T10</title>
+  </head>
+  <body>
+    <ul id="lists">
+      <li id="one">One</li>
+      <li id="two">Two</li>
+      <li id="three">Three</li>
+      <li id="four">Four</li>
+    </ul>
+    <button type="button" id="button">add</button>
+    <h4 id="ans"></h4>
+  </body>
+  <script>
+    var listmain = document.getElementById("lists");
+    var answer = document.getElementById("ans");
+    var buttons1 = document.getElementById("button");
+
+    buttons1.addEventListener("click", (e) => {
+      var newelem = document.createElement("li");
+      newelem.innerText = "new";
+      listmain.appendChild(newelem);
+    });
+
+    listmain.addEventListener('click', (e) => {
+        if (e.target.tagName === 'LI') {
+            answer.innerText = e.target.innerText
+        }
+    })
+  </script>
+</html>

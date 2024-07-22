@@ -1,0 +1,28 @@
+<!-- Task 8: Add a change event listener to a select dropdown that displays the selected
+value in a paragraph.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4_T8</title>
+</head>
+<body>
+    <select name="drop" id="drop">
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+    </select>
+    <h4 id="ans"></h4>
+</body>
+<script>
+    var buttons = document.getElementById("drop")
+    var answer = document.getElementById("ans")
+
+    buttons.addEventListener('change',(e)=>{
+        answer.innerText = e.target.value
+    })
+    
+</script>
+</html>

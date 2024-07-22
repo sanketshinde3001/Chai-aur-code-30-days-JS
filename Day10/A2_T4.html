@@ -1,0 +1,25 @@
+<!-- Task 4: Add a mouseout event listener to an element that resets its background color. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2_T4</title>
+</head>
+<body>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, distinctio porro atque culpa animi, inventore optio tenetur consequuntur voluptate unde placeat esse veniam, ipsam vero.
+    </p>
+    
+</body>
+<script>
+    var paragraph = document.getElementById("para")
+    paragraph.addEventListener('mouseover',()=>{
+        paragraph.style.backgroundColor = "red"
+    })
+    paragraph.addEventListener('mouseout',()=>{
+        paragraph.style.backgroundColor = "transparent"
+    })
+</script>
+</html>

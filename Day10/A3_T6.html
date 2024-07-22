@@ -1,0 +1,26 @@
+<!-- Task 6: Add a keyup event listener to an input field that displays the current value in a
+paragraph. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3_T6</title>
+</head>
+<body>
+    <div id="para">
+        <h3>Input here - </h3><input type="text" id="ipname">
+        <h3 id="keyname"></h3>
+    </div>
+    
+</body>
+<script>
+    var inputname = document.getElementById("ipname")
+    var kname = document.getElementById("keyname")
+    inputname.addEventListener('keyup',()=>{
+        kname.innerText = `You Entered ${inputname.value}`
+    })
+    
+</script>
+</html>

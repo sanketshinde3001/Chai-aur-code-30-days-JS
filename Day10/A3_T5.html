@@ -1,0 +1,26 @@
+<!-- Task 5: Add a keydown event listener to an input field that logs the key pressed to the
+console. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3_T5</title>
+</head>
+<body>
+    <div id="para">
+        <h3>Input here - </h3><input type="text" id="ipname">
+        <h3 id="keyname"></h3>
+    </div>
+    
+</body>
+<script>
+    var inputname = document.getElementById("ipname")
+    var kname = document.getElementById("keyname")
+    inputname.addEventListener('keydown',(e)=>{
+        kname.innerText = `You Entered ${e.key}`
+    })
+    
+</script>
+</html>

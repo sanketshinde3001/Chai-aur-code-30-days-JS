@@ -1,0 +1,31 @@
+<!-- Task 7: Add a submit event listener to a form that prevents the default submission and
+logs the form data to the console.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4_T7</title>
+</head>
+<body>
+    <form>
+        <div>Name - <input type="text" id="nameq"></div>
+        <div>Age - <input type="number" id="ageq"></div>
+        <div>Class - <input type="text" id="classq"></div>
+        <button type="submit" id="subbut">Save</button>
+    </form>
+</body>
+<script>
+    var buttons = document.getElementById("subbut")
+    var name1 = document.getElementById('nameq')
+    var age1 = document.getElementById('ageq')
+    var class1 = document.getElementById('classq')
+
+    buttons.addEventListener('click',(e)=>{
+        e.preventDefault();
+        console.log(name1.value,age1.value,class1.value)
+    })
+    
+</script>
+</html>

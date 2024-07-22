@@ -1,0 +1,31 @@
+<!-- Task 9: Add a click event listener to a list that logs the text content of the clicked list
+item using event delegation.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5_T9</title>
+</head>
+<body>
+    <ul id="lists">
+        <li id="one">One</li>
+        <li id="two">Two</li>
+        <li id="three">Three</li>
+        <li id="four">Four</li>
+    </ul>
+    <h4 id="ans"></h4>
+</body>
+<script>
+    var listmain = document.getElementById("lists")
+    var answer = document.getElementById("ans")
+
+    listmain.addEventListener('click',(e)=>{
+      var temp = e.target.id
+      var temp1 = document.getElementById(`${temp}`).innerText
+      answer.innerText = temp1
+    })
+    
+</script>
+</html>
