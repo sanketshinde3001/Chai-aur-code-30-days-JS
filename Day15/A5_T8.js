@@ -1,5 +1,4 @@
-// Task 7: Write a function that memoizes the results of another function. Use a closure to store the results of previous computations.
-
+// Create a memoized version of a function that calculates the factorial of a number.
 
 function datacache(fun) {
     const cache = {}
@@ -17,12 +16,21 @@ function datacache(fun) {
     }
 }
 
-const multiply = (a,b) => a*b
+const facto = (n) => {
+    if (n < 0) {
+        return -1;
+    }
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
 
-const mulcache = datacache(multiply)
+const cachefacto = datacache(facto)
 
 
 
-console.log(mulcache(80,3))
-console.log(mulcache(80,5))
-console.log(mulcache(80,3))
+console.log(cachefacto(5))
+console.log(cachefacto(7))
+console.log(cachefacto(5))
