@@ -1,0 +1,1 @@
+// Task 1: Implement a Noce class to represent an element in a linked list with properties value and next .
